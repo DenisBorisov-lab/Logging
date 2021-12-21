@@ -1,9 +1,13 @@
 package spring;
 
-import org.springframework.context.annotation.*;
-import ru.otus.spring.domain.Person;
-import ru.otus.spring.service.PersonService;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import spring.domain.Person;
+import spring.service.PersonService;
 
+@EnableAspectJAutoProxy
 @Configuration
 @ComponentScan
 public class Main {
